@@ -5,161 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pesebrera Digital PRO | VIBRAS POSITIVAS HM</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        h1, h2, .font-serif { font-family: 'Playfair Display', serif; }
-        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
-        .bg-equino { 
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-            background-size: cover;
-            background-position: center;
+        h1, h2, h3, .font-luxury { font-family: 'Cinzel', serif; }
+        body { font-family: 'Montserrat', sans-serif; background-color: #0a0a0a; color: #fff; }
+        .hero-video-bg { 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('https://images.pexels.com/photos/1996333/pexels-photo-1996333.jpeg?auto=compress&cs=tinysrgb&w=1920');
+            background-size: cover; background-position: center;
         }
-        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
-        .btn-premium { background: linear-gradient(135deg, #b45309 0%, #78350f 100%); transition: all 0.3s ease; }
-        .btn-premium:hover { transform: scale(1.05); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        .gold-gradient { background: linear-gradient(135deg, #d4af37 0%, #996515 100%); }
+        .gold-text { color: #d4af37; }
+        .border-gold { border-color: #d4af37; }
+        .card-premium { background: #161616; border: 1px solid #222; transition: all 0.4s ease; }
+        .card-premium:hover { border-color: #d4af37; transform: translateY(-5px); }
     </style>
 </head>
-<body class="bg-stone-50 text-stone-900">
+<body class="overflow-x-hidden">
 
-    <nav class="bg-white/90 backdrop-blur shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
-            <div class="flex items-center">
-                <i class="fas fa-horse-head text-3xl text-amber-800 mr-3"></i>
-                <span class="text-xl font-bold tracking-tighter text-stone-800">PESEBRERA <span class="text-amber-700">DIGITAL PRO</span></span>
+    <nav class="bg-black/80 backdrop-blur-md sticky top-0 z-50 py-6 border-b border-white/10">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex flex-col">
+                <span class="text-2xl font-bold tracking-[0.3em] gold-text">VIBRAS POSITIVAS HM</span>
+                <span class="text-[10px] tracking-[0.5em] uppercase opacity-60">High Technology Equine</span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest">
-                <a href="#servicios" class="hover:text-amber-700 transition">Servicios</a>
-                <a href="#app" class="hover:text-amber-700 transition">Tecnología</a>
-                <a href="#contacto" class="hover:text-amber-700 transition">Contacto</a>
-                <a href="#" class="btn-premium text-white px-6 py-2 rounded-full shadow-lg">Login App</a>
+            <div class="hidden lg:flex space-x-12 text-[11px] font-bold uppercase tracking-[0.2em]">
+                <a href="#ejemplares" class="hover:text-amber-500 transition">Ejemplares</a>
+                <a href="#genetica" class="hover:text-amber-500 transition">Genética</a>
+                <a href="#app" class="gold-text border border-gold px-6 py-2 hover:bg-gold-gradient hover:text-black transition">Web App Acceso</a>
             </div>
         </div>
     </nav>
 
-    <header class="relative h-[90vh] flex items-center justify-center text-center bg-equino text-white">
-        <div class="max-w-4xl px-6">
-            <span class="uppercase tracking-[0.3em] text-amber-400 font-semibold mb-4 block">Vibras Positivas HM Presenta</span>
-            <h1 class="text-5xl md:text-7xl font-bold mb-6">Pasión por los Caballos, <br> <span class="italic text-amber-200">Precisión Tecnológica.</span></h1>
-            <p class="text-lg md:text-xl mb-10 font-light opacity-90">Transformamos la gestión de tu pesebrera en Caucasia con software de élite y diseño de clase mundial.</p>
-            <div class="flex flex-col md:flex-row justify-center gap-6">
-                <a href="#app" class="btn-premium px-10 py-4 rounded-full font-bold text-lg">Explorar la Web App</a>
-                <a href="#contacto" class="border-2 border-white hover:bg-white hover:text-stone-900 px-10 py-4 rounded-full font-bold text-lg transition">Solicitar Demo</a>
+    <header class="h-screen flex items-center justify-center text-center hero-video-bg">
+        <div class="max-w-5xl px-6">
+            <h1 class="text-6xl md:text-8xl mb-4 font-bold tracking-tighter">EL LEGADO <br><span class="gold-text italic">CONTINÚA</span></h1>
+            <p class="text-sm md:text-base uppercase tracking-[0.6em] opacity-80 mb-12">Caucasia · Gestión de Élite · VIBRAS POSITIVAS HM</p>
+            <div class="flex justify-center">
+                <div class="w-[1px] h-32 bg-gradient-to-b from-transparent via-gold-text to-transparent"></div>
             </div>
         </div>
     </header>
 
-    <section id="servicios" class="py-24 bg-white">
+    <section id="ejemplares" class="py-32 bg-black">
         <div class="container mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
-                <div class="max-w-2xl">
-                    <h2 class="text-4xl font-bold text-stone-900 mb-4">Soluciones a la Medida del Gremio</h2>
-                    <p class="text-stone-500">Diseñado específicamente para las necesidades únicas de las pesebreras en el Bajo Cauca.</p>
-                </div>
-                <div class="h-1 w-24 bg-amber-700 mb-4"></div>
+            <div class="text-center mb-24">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">EJEMPLARES <span class="gold-text italic">DESTACADOS</span></h2>
+                <div class="w-24 h-[2px] bg-amber-600 mx-auto"></div>
             </div>
-            
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="p-10 border border-stone-100 shadow-sm rounded-3xl hover:shadow-2xl transition bg-stone-50">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-amber-800 text-2xl">
-                        <i class="fas fa-clipboard-check"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Control de Pensionado</h3>
-                    <p class="text-stone-600 leading-relaxed">Registro diario de alimentación, suplementos y rutinas de ejercicio con reportes automáticos al propietario.</p>
-                </div>
-                <div class="p-10 border border-stone-100 shadow-sm rounded-3xl hover:shadow-2xl transition bg-stone-50">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-amber-800 text-2xl">
-                        <i class="fas fa-calendar-alt"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Agenda de Academia</h3>
-                    <p class="text-stone-600 leading-relaxed">Sistema de reservas para clases de monta. Control de asistencia mediante QR y niveles de desempeño.</p>
-                </div>
-                <div class="p-10 border border-stone-100 shadow-sm rounded-3xl hover:shadow-2xl transition bg-stone-50">
-                    <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center mb-6 text-amber-800 text-2xl">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold mb-4">Salud & Bienestar</h3>
-                    <p class="text-stone-600 leading-relaxed">Historial clínico digital. Alertas de vacunación, desparasitación y calendario de herrajes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="app" class="py-24 bg-stone-900 text-white relative overflow-hidden">
-        <div class="container mx-auto px-6 relative z-10">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-4xl font-bold mb-8">Una Oficina Virtual en <span class="text-amber-500 italic font-serif text-5xl">tu bolsillo.</span></h2>
-                    <p class="text-stone-400 text-lg mb-10 leading-relaxed">Olvídate de las libretas. Gestiona tu inventario de heno, factura a tus clientes y supervisa a tus empleados desde cualquier lugar.</p>
-                    
-                    <div class="space-y-6">
-                        <div class="flex gap-4">
-                            <div class="text-amber-500 mt-1"><i class="fas fa-shield-alt text-xl"></i></div>
-                            <div>
-                                <h4 class="font-bold text-xl">Seguridad de Datos</h4>
-                                <p class="text-stone-500">Copias de seguridad diarias y acceso restringido por roles.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="text-amber-500 mt-1"><i class="fas fa-chart-line text-xl"></i></div>
-                            <div>
-                                <h4 class="font-bold text-xl">Tarifas Tintorillo Pro</h4>
-                                <p class="text-stone-500">Maneja tu contabilidad con el estándar más eficiente del mercado.</p>
-                            </div>
-                        </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm">
+                    <img src="https://images.pexels.com/photos/1996330/pexels-photo-1996330.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full grayscale group-hover:grayscale-0 transition duration-700 scale-105 group-hover:scale-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h3 class="text-3xl font-bold mb-2 uppercase">Magnífico de VPHM</h3>
+                        <p class="gold-text text-sm tracking-widest font-bold">REPRODUCTOR DE ÉLITE</p>
                     </div>
                 </div>
-                
-                <div class="relative">
-                    <div class="bg-amber-700/20 absolute -inset-4 rounded-full blur-3xl"></div>
-                    <div class="glass-card p-6 rounded-[2rem] border border-white/20 relative shadow-2xl">
-                        <div class="flex items-center justify-between mb-6 border-b pb-4 border-stone-200">
-                            <span class="text-stone-800 font-bold uppercase tracking-widest text-xs">Dashboard / Caballo: Rayo de Plata</span>
-                            <span class="bg-green-100 text-green-700 text-[10px] px-2 py-1 rounded-full font-bold uppercase">Estado: En Pista</span>
-                        </div>
-                        <div class="grid grid-cols-2 gap-4 mb-6">
-                            <div class="bg-stone-100 p-4 rounded-xl">
-                                <p class="text-stone-400 text-[10px] uppercase font-bold">Último Herraje</p>
-                                <p class="text-stone-800 font-bold">15 Mar 2026</p>
-                            </div>
-                            <div class="bg-stone-100 p-4 rounded-xl">
-                                <p class="text-stone-400 text-[10px] uppercase font-bold">Propietario</p>
-                                <p class="text-stone-800 font-bold">H. Marin</p>
-                            </div>
-                        </div>
-                        <div class="h-32 bg-stone-200 rounded-xl mb-4 flex items-center justify-center italic text-stone-400">
-                            Gráfico de Nutrición & Suplementos
-                        </div>
-                        <button class="w-full btn-premium py-3 rounded-xl text-white font-bold text-sm uppercase tracking-widest shadow-lg">Descargar Reporte PDF</button>
+                <div class="relative group cursor-pointer overflow-hidden rounded-sm">
+                    <img src="https://images.pexels.com/photos/1524620/pexels-photo-1524620.jpeg?auto=compress&cs=tinysrgb&w=800" class="w-full grayscale group-hover:grayscale-0 transition duration-700 scale-105 group-hover:scale-100">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-90"></div>
+                    <div class="absolute bottom-10 left-10">
+                        <h3 class="text-3xl font-bold mb-2 uppercase">Sinfonía del Cauca</h3>
+                        <p class="gold-text text-sm tracking-widest font-bold">GRAN DONANTE</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-12">
-        <div class="container mx-auto px-6 border-t border-stone-100 pt-12">
-            <div class="grid md:grid-cols-3 gap-12 mb-12">
-                <div>
-                    <h3 class="text-xl font-bold mb-6 italic font-serif">VIBRAS POSITIVAS HM</h3>
-                    <p class="text-stone-500 text-sm leading-relaxed">Liderando la transformación digital del sector equino en Caucasia. Innovación, pasión y resultados garantizados.</p>
+    <section id="app" class="py-32 bg-[#050505] border-y border-white/5">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+            <div>
+                <span class="gold-text text-xs font-bold tracking-[0.4em] uppercase mb-4 block">Ecosistema Digital</span>
+                <h2 class="text-4xl font-bold mb-8 leading-tight">Garantizamos la trazabilidad absoluta de su <span class="italic font-serif">Inversión.</span></h2>
+                <p class="text-stone-400 mb-12 text-sm leading-relaxed">Nuestra Web App, bajo el estándar de **VIBRAS POSITIVAS HM**, le permite gestionar desde el registro embrionario hasta la comercialización internacional, utilizando métricas de **Tarifas de Tintorillo Pro** para máxima eficiencia financiera.</p>
+                <ul class="space-y-6">
+                    <li class="flex items-center space-x-4 border-b border-white/10 pb-4">
+                        <span class="gold-text font-bold">01.</span>
+                        <span class="text-xs uppercase tracking-widest">Control Genético & Pedigree</span>
+                    </li>
+                    <li class="flex items-center space-x-4 border-b border-white/10 pb-4">
+                        <span class="gold-text font-bold">02.</span>
+                        <span class="text-xs uppercase tracking-widest">Monitoreo de Salud 24/7</span>
+                    </li>
+                    <li class="flex items-center space-x-4 border-b border-white/10 pb-4">
+                        <span class="gold-text font-bold">03.</span>
+                        <span class="text-xs uppercase tracking-widest">Mercado de Montas Online</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-stone-900 p-1 rounded-sm shadow-2xl border border-white/10">
+                <div class="bg-black p-10 text-center">
+                    <i class="fas fa-horse-head text-6xl gold-text mb-8"></i>
+                    <h4 class="text-xl font-bold mb-4 uppercase tracking-[0.2em]">Pesebrera Digital Pro</h4>
+                    <p class="text-stone-500 text-xs mb-10 italic">"La tecnología al servicio de la pasión"</p>
+                    <button class="w-full gold-gradient py-4 text-black font-bold text-xs uppercase tracking-widest">Entrar al Sistema</button>
                 </div>
-                <div>
-                    <h4 class="font-bold text-xs uppercase tracking-widest text-stone-400 mb-6">Contacto Directo</h4>
-                    <ul class="text-stone-800 space-y-3 font-semibold">
-                        <li><i class="fab fa-whatsapp mr-2 text-green-600"></i> +57 311 770 0431</li>
-                        <li><i class="fas fa-envelope mr-2 text-amber-700"></i> info@vibraspositivas.com</li>
-                        <li><i class="fas fa-map-marker-alt mr-2 text-amber-700"></i> Caucasia, Antioquia</li>
-                    </ul>
-                </div>
-                <div class="text-right">
-                    <p class="text-xs font-mono text-stone-400 uppercase leading-loose">
-                        App desarrollada por<br>
-                        <span class="text-stone-900 font-bold">VIBRAS POSITIVAS HM</span><br>
-                        Derechos de autor (3117700431)<br>
-                        Basado en tarifas de Tintorillo Pro
-                    </p>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-20 border-t border-white/10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl font-bold mb-10 tracking-[0.2em]">VIBRAS POSITIVAS <span class="gold-text">HM</span></h3>
+            <div class="flex justify-center space-x-12 mb-16 text-stone-500 uppercase text-[10px] tracking-[0.3em] font-bold">
+                <a href="#" class="hover:text-white transition">Instagram</a>
+                <a href="#" class="hover:text-white transition">Facebook</a>
+                <a href="#" class="hover:text-white transition">WhatsApp</a>
+            </div>
+            <div class="text-[9px] font-mono opacity-30 uppercase leading-loose">
+                App desarrollada por VIBRAS POSITIVAS HM - Derechos de autor (3117700431)<br>
+                Caucasia, Antioquia | Basado en Tarifas de Tintorillo Pro
             </div>
         </div>
     </footer>
